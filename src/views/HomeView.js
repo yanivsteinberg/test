@@ -8,7 +8,7 @@ class HomeView extends React.Component {
 
       <Stack>
         <h1>
-          20 Greatest Recipies for Your Army to March On
+          Recipies
         </h1>
       </Stack>
     );

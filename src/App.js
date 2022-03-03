@@ -20,7 +20,7 @@ class App extends React.Component {
 
           <Box sx={{ width: '100%' }}>
             <h1 className='title'>
-              Recipies
+              20 Greatest Recipies for Your Army to March On
             </h1>
 
             <nav className='navbar'>
