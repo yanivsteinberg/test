@@ -1,18 +1,18 @@
 import * as React from "react";
 import { Stack } from '@mui/material';
 
-class HomeView extends React.Component {
+class CategoryView extends React.Component {
   render() {
 
     return (
 
       <Stack>
         <h1>
-          Recipes
+          Categories
         </h1>
       </Stack>
     );
   }
 }
 
-export default HomeView;
+export default CategoryView;

@@ -4,6 +4,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import HomeView from './views/HomeView';
+import CategoryView from './views/CategoryView';
+import Carousel from './components/Carousel';
 
 
 class App extends React.Component {
@@ -17,11 +19,17 @@ class App extends React.Component {
     return (
       <>
         <div>
+          {
+            <Container maxWidth="xl">
+              <Carousel
+                className='carousel' />
+              <h1 className='title'>
+                20 Greatest Recipes for Your Army to March On
+              </h1>
+            </Container>
+          }
 
           <Box sx={{ width: '100%' }}>
-            <h1 className='title'>
-              20 Greatest Recipies for Your Army to March On
-            </h1>
 
             <nav className='navbar'>
               <ul >
@@ -29,7 +37,7 @@ class App extends React.Component {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/completed">Recipe Categories</Link>
+                  <Link to="/categories">Recipe Categories</Link>
                 </li>
                 <li>
                   <Link to="/information">About</Link>
@@ -45,7 +53,14 @@ class App extends React.Component {
               <HomeView
               />
             </Container>
+          }
+          />
 
+          <Route exact path="/categories" element={
+            <Container maxWidth="sm">
+              <CategoryView
+              />
+            </Container>
           }
           />
 
