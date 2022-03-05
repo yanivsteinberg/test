@@ -4,6 +4,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import HomeView from './views/HomeView';
+import CategoryView from './views/CategoryView';
 
 
 class App extends React.Component {
@@ -29,7 +30,7 @@ class App extends React.Component {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/completed">Recipe Categories</Link>
+                  <Link to="/categories">Recipe Categories</Link>
                 </li>
                 <li>
                   <Link to="/information">About</Link>
@@ -45,7 +46,14 @@ class App extends React.Component {
               <HomeView
               />
             </Container>
+          }
+          />
 
+          <Route exact path="/categories" element={
+            <Container maxWidth="sm">
+              <CategoryView
+              />
+            </Container>
           }
           />
 
