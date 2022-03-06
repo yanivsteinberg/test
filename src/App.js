@@ -53,8 +53,6 @@ class App extends React.Component {
             <Container maxWidth="sm">
               <HomeView
               />
-
-
               <RecipeView
               />
             </Container>
