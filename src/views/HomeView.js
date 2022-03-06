@@ -5,12 +5,14 @@ class HomeView extends React.Component {
   render() {
 
     return (
+      <div>
+        <Stack>
+          <h1>
+            Recipes
+          </h1>
+        </Stack>
 
-      <Stack>
-        <h1>
-          Recipes
-        </h1>
-      </Stack>
+      </div>
     );
   }
 }

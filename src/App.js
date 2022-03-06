@@ -6,6 +6,7 @@ import Container from '@mui/material/Container';
 import HomeView from './views/HomeView';
 import CategoryView from './views/CategoryView';
 import Carousel from './components/Carousel';
+import RecipeView from './views/RecipeView';
 
 
 class App extends React.Component {
@@ -52,7 +53,12 @@ class App extends React.Component {
             <Container maxWidth="sm">
               <HomeView
               />
+
+
+              <RecipeView
+              />
             </Container>
+
           }
           />
 
