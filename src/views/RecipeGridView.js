@@ -3,7 +3,7 @@ import { Grid } from '@mui/material';
 import CardComponent from '../components/CardComponent';
 
 
-class RecipeView extends React.Component {
+class RecipeGridView extends React.Component {
   render() {
 
     return (
@@ -35,4 +35,4 @@ class RecipeView extends React.Component {
   }
 }
 
-export default RecipeView;
+export default RecipeGridView;
