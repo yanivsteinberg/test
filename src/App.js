@@ -6,7 +6,8 @@ import Container from '@mui/material/Container';
 import HomeView from './views/HomeView';
 import CategoryView from './views/CategoryView';
 import Carousel from './components/Carousel';
-import RecipeView from './views/RecipeView';
+import RecipeGridView from './views/RecipeGridView';
+import AuthorsView from './views/AuthorsView';
 
 
 class App extends React.Component {
@@ -41,7 +42,7 @@ class App extends React.Component {
                   <Link to="/categories">Recipe Categories</Link>
                 </li>
                 <li>
-                  <Link to="/information">About</Link>
+                  <Link to="/authors">Authors</Link>
                 </li>
               </ul>
             </nav>
@@ -53,7 +54,7 @@ class App extends React.Component {
             <Container maxWidth="sm">
               <HomeView
               />
-              <RecipeView
+              <RecipeGridView
               />
             </Container>
 
@@ -63,6 +64,14 @@ class App extends React.Component {
           <Route exact path="/categories" element={
             <Container maxWidth="sm">
               <CategoryView
+              />
+            </Container>
+          }
+          />
+
+          <Route exact path="/authors" element={
+            <Container maxWidth="sm">
+              <AuthorsView
               />
             </Container>
           }
