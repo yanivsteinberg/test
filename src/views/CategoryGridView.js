@@ -1,10 +1,11 @@
 import * as React from "react";
 import { Grid } from '@mui/material';
-import CardComponent from '../components/CardComponents/CardComponent';
-import CardComponent2 from '../components/CardComponents/CardComponent2';
+import StartersComponent from '../components/CategoryComponents/StartersComponent';
+import MainComponent from '../components/CategoryComponents/MainComponent';
+import DrinksComponent from '../components/CategoryComponents/DrinksComponent';
+import DessertComponent from '../components/CategoryComponents/DessertComponent';
 
-
-class RecipeGridView extends React.Component {
+class CategoryGridView extends React.Component {
   render() {
 
     return (
@@ -12,20 +13,20 @@ class RecipeGridView extends React.Component {
         <div>
           <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
             <Grid item xs={6}>
-              <CardComponent
+              <StartersComponent
               />
 
             </Grid>
             <Grid item xs={6}>
-              <CardComponent2
+              <MainComponent
               />
             </Grid>
             <Grid item xs={6}>
-              <CardComponent
+              <DessertComponent
               />
             </Grid>
             <Grid item xs={6}>
-              <CardComponent
+              <DrinksComponent
               />
             </Grid>
           </Grid>
@@ -36,4 +37,4 @@ class RecipeGridView extends React.Component {
   }
 }
 
-export default RecipeGridView;
+export default CategoryGridView;

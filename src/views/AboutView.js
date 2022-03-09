@@ -1,18 +1,18 @@
 import * as React from "react";
 import { Stack } from '@mui/material';
 
-class AuthorsView extends React.Component {
+class AboutView extends React.Component {
   render() {
 
     return (
 
       <Stack>
         <h1>
-          Authors
+          About
         </h1>
       </Stack>
     );
   }
 }
 
-export default AuthorsView;
+export default AboutView;
