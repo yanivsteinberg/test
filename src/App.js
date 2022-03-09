@@ -7,8 +7,9 @@ import HomeView from './views/HomeView';
 import CategoryView from './views/CategoryView';
 import Carousel from './components/Carousel';
 import RecipeGridView from './views/RecipeGridView';
-import AuthorsView from './views/AuthorsView';
-import RecipeView1 from './views/RecipeView1';
+import AboutView from './views/AboutView';
+import RecipeView1 from './views/RecipeViews/RecipeView1';
+import RecipeView2 from './views/RecipeViews/RecipeView2';
 
 
 class App extends React.Component {
@@ -43,7 +44,7 @@ class App extends React.Component {
                   <Link to="/categories">Recipe Categories</Link>
                 </li>
                 <li>
-                  <Link to="/authors">Authors</Link>
+                  <Link to="/about">About</Link>
                 </li>
               </ul>
             </nav>
@@ -60,9 +61,9 @@ class App extends React.Component {
           }
           />
 
-          <Route exact path="/authors" element={
+          <Route exact path="/about" element={
             <Container maxWidth="sm">
-              <AuthorsView
+              <AboutView
               />
             </Container>
           }
@@ -71,6 +72,14 @@ class App extends React.Component {
           <Route exact path="/recipeview1" element={
             <Container maxWidth="sm">
               <RecipeView1
+              />
+            </Container>
+          }
+          />
+
+          <Route exact path="/recipeview2" element={
+            <Container maxWidth="sm">
+              <RecipeView2
               />
             </Container>
           }
