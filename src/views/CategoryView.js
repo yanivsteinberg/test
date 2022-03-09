@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Stack } from '@mui/material';
+import CategoryGridView from './CategoryGridView';
 
 class CategoryView extends React.Component {
   render() {
@@ -7,9 +8,17 @@ class CategoryView extends React.Component {
     return (
 
       <Stack>
+
         <h1>
           Categories
         </h1>
+
+        <div>
+          <CategoryGridView
+          />
+
+        </div>
+
       </Stack>
     );
   }
