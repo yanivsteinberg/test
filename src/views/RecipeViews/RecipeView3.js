@@ -16,7 +16,7 @@ class RecipeView3 extends React.Component {
           <CardMedia
             component="img"
             height="194"
-            image="/static/images/cards/paella.jpg"
+            image="https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2017/04/18195816/051095070-01-creme-caramel-main.jpg"
             alt="Caramel Flan"
             style={{ paddingLeft: 13 }}
           />

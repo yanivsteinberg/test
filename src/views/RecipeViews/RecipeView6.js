@@ -16,7 +16,7 @@ class RecipeView6 extends React.Component {
           <CardMedia
             component="img"
             height="194"
-            image="/static/images/cards/paella.jpg"
+            image="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/mushroom_soup-9b55c55.jpg"
             alt="Mushroom Soup"
             style={{ paddingLeft: 13 }}
           />

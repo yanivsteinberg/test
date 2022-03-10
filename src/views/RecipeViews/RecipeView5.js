@@ -16,7 +16,7 @@ class RecipeView5 extends React.Component {
           <CardMedia
             component="img"
             height="194"
-            image="/static/images/cards/paella.jpg"
+            image="https://mykoreankitchen.com/wp-content/uploads/2013/07/1.Korean-mixed-rice-Bibimbap.webp"
             alt="Bibimbap"
             style={{ paddingLeft: 13 }}
           />
