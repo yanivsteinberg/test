@@ -16,7 +16,7 @@ class RecipeView2 extends React.Component {
           <CardMedia
             component="img"
             height="194"
-            image="/static/images/cards/paella.jpg"
+            image="https://www.justonecookbook.com/wp-content/uploads/2020/03/Shrimp-Tempura-3130-II.jpg"
             alt="Shrimp Tempura"
             style={{ paddingLeft: 13 }}
           />

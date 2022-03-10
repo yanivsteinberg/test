@@ -19,7 +19,7 @@ class RecipeView4 extends React.Component {
           <CardMedia
             component="img"
             height="194"
-            image="/static/images/cards/paella.jpg"
+            image="https://galumbi.com/wp-content/uploads/2017/10/Jisei-4-von-5-590x912.jpg"
             alt="Choya Umeshu Spritz"
             style={{ paddingLeft: 13 }}
           />
