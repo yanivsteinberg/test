@@ -33,7 +33,7 @@ export default function MainComponent() {
         subheader="September 14, 2016"
       />
       <CardActionArea>
-        <Link to={"/recipeview1"} style={{ textDecoration: "none" }}>
+        <Link to={"/mains"} style={{ textDecoration: "none" }}>
           <CardMedia
             component="img"
             height="194"
