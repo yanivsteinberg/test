@@ -1,16 +1,14 @@
 import * as React from "react";
-import { Stack } from '@mui/material';
-import CardHeader from '@mui/material/CardHeader';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import CardMedia from '@mui/material/CardMedia';
-import Checkbox from '@mui/material/Checkbox';
-import FormControlLabel from '@mui/material/FormControlLabel';
-
+import { Stack } from "@mui/material";
+import CardHeader from "@mui/material/CardHeader";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import CardMedia from "@mui/material/CardMedia";
+import Checkbox from "@mui/material/Checkbox";
+import FormControlLabel from "@mui/material/FormControlLabel";
 
 class RecipeView1 extends React.Component {
   render() {
-
     return (
       <div>
         <Stack>
@@ -27,9 +25,102 @@ class RecipeView1 extends React.Component {
           />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
-              This impressive paella is a perfect party dish and a fun meal to cook
-              together with your guests. Add 1 cup of frozen peas along with the mussels,
-              if you like.
+              This impressive paella is a perfect party dish and a fun meal to
+              cook together with your guests. Add 1 cup of frozen peas along
+              with the mussels, if you like.
+            </Typography>
+          </CardContent>
+          <CardContent>
+            <Typography paragraph>Ingredients:</Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="4 cups chicken broth"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="1/2 teaspoon saffron threads"
+                labelPlacement="end"
+              />
+            </Typography>
+
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="3 tablespoons extra-virgin olive oil"
+                labelPlacement="end"
+              />
+            </Typography>
+
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="6 ounces chorizo, sliced"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="6 ounces chicken breast, sliced"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="6 ounces shrimp, deveined"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="1 large onion, 3 cloves of garlic, minced"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="1 teaspoon pimentón"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="3/2 cups Spanish short grain rice"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="1/2 cup tomato purée, fresh or Canned"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="Salt, Pepper, Bay Leaves"
+                labelPlacement="end"
+              />
             </Typography>
           </CardContent>
 
@@ -39,7 +130,7 @@ class RecipeView1 extends React.Component {
               <FormControlLabel
                 value="end"
                 control={<Checkbox />}
-                label="Heat 1/2 cup of the broth in a pot until simmering, add saffron and set
+                label="Heat 1/2 cup of the chicken broth in a pot until simmering, add saffron and set
                 aside for 10 minutes."
                 labelPlacement="end"
               />
@@ -54,7 +145,7 @@ class RecipeView1 extends React.Component {
                 large plate and set aside, leaving chicken and chorizo in the pan. Add
                 pimentón, bay leaves, garlic, tomatoes, onion, salt and pepper, and cook,
                 stirring often until thickened and fragrant, about 10 minutes. Add
-                saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil."
+                saffron broth and remaining chicken broth; bring to a boil."
                 labelPlacement="end"
               />
             </Typography>
@@ -83,8 +174,7 @@ class RecipeView1 extends React.Component {
             </Typography>
           </CardContent>
         </Stack>
-
-      </div >
+      </div>
     );
   }
 }

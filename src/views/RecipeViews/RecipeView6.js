@@ -1,23 +1,18 @@
 import * as React from "react";
-import { Stack } from '@mui/material';
-import CardHeader from '@mui/material/CardHeader';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import CardMedia from '@mui/material/CardMedia';
-import Checkbox from '@mui/material/Checkbox';
-import FormControlLabel from '@mui/material/FormControlLabel';
+import { Stack } from "@mui/material";
+import CardHeader from "@mui/material/CardHeader";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import CardMedia from "@mui/material/CardMedia";
+import Checkbox from "@mui/material/Checkbox";
+import FormControlLabel from "@mui/material/FormControlLabel";
 
-
-class RecipeView2 extends React.Component {
+class RecipeView6 extends React.Component {
   render() {
-
     return (
       <div>
         <Stack>
-          <CardHeader
-            title="Pizza with Pineapples"
-            subheader="September 14, 2016"
-          />
+          <CardHeader title="Mushroom Soup" subheader="September 14, 2016" />
           <CardMedia
             component="img"
             height="194"
@@ -27,20 +22,97 @@ class RecipeView2 extends React.Component {
           />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
-              This impressive paella is a perfect party dish and a fun meal to cook
-              together with your guests. Add 1 cup of frozen peas along with the mussels,
-              if you like.
+              Make the most of mushrooms with this comforting mushroom soup
+              recipe made with cream, onions and garlic. Serve for lunch or as a
+              starter with crusty bread.
             </Typography>
           </CardContent>
 
+          <CardContent>
+            <Typography paragraph>Ingredients:</Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="90g butter"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="2 medium onions, roughly chopped"
+                labelPlacement="end"
+              />
+            </Typography>
+
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="1 garlic clove, crushed"
+                labelPlacement="end"
+              />
+            </Typography>
+
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="500g mushrooms, finely chopped (chestnut or button mushrooms work well)"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="2 tbsp plain flour"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="1L chicken stock"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="1 bay leaf"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="4 tbsp heavy flour"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="small handful flat-leaf parsley, roughly chopped, to serve (optional)"
+                labelPlacement="end"
+              />
+            </Typography>
+          </CardContent>
           <CardContent>
             <Typography paragraph>Method:</Typography>
             <Typography paragraph>
               <FormControlLabel
                 value="end"
                 control={<Checkbox />}
-                label="Heat 1/2 cup of the broth in a pot until simmering, add saffron and set
-                aside for 10 minutes."
+                label="Heat the butter in a large saucepan and cook the onions 
+                and garlic until soft but not browned, about 8-10 mins."
                 labelPlacement="end"
               />
             </Typography>
@@ -48,13 +120,9 @@ class RecipeView2 extends React.Component {
               <FormControlLabel
                 value="end"
                 control={<Checkbox />}
-                label="Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over
-                medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
-                occasionally until lightly browned, 6 to 8 minutes. Transfer shrimp to a
-                large plate and set aside, leaving chicken and chorizo in the pan. Add
-                pimentón, bay leaves, garlic, tomatoes, onion, salt and pepper, and cook,
-                stirring often until thickened and fragrant, about 10 minutes. Add
-                saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil."
+                label="Add the mushrooms and cook over a high heat for another 3 mins until softened.
+                 Sprinkle over the flour and stir to combine.
+                 Pour in the chicken stock, bring the mixture to the boil, then add the bay leaf and simmer for another 10 mins."
                 labelPlacement="end"
               />
             </Typography>
@@ -63,30 +131,18 @@ class RecipeView2 extends React.Component {
               <FormControlLabel
                 value="end"
                 control={<Checkbox />}
-                label="                Add rice and stir very gently to distribute. Top with artichokes and
-                peppers, and cook without stirring, until most of the liquid is absorbed,
-                15 to 18 minutes. Reduce heat to medium-low, add reserved shrimp and
-                mussels, tucking them down into the rice, and cook again without
-                stirring, until mussels have opened and rice is just tender, 5 to 7
-                minutes more. (Discard any mussels that don’t open.)."
-                labelPlacement="end"
-              />
-            </Typography>
-
-            <Typography paragraph>
-              <FormControlLabel
-                value="end"
-                control={<Checkbox />}
-                label="Set aside off of the heat to let rest for 10 minutes, and then serve."
+                label=" Remove and discard the bay leaf, then remove the mushroom mixture from the heat and blitz using a hand blender until smooth. 
+                Gently reheat the soup and stir through the cream 
+                (or, you could freeze the soup at this stage – simply stir through the cream when heating). 
+                Scatter over the parsley, if you like, and serve."
                 labelPlacement="end"
               />
             </Typography>
           </CardContent>
         </Stack>
-
-      </div >
+      </div>
     );
   }
 }
 
-export default RecipeView2;
+export default RecipeView6;

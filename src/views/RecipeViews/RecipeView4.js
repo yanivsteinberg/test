@@ -1,21 +1,19 @@
 import * as React from "react";
-import { Stack } from '@mui/material';
-import CardHeader from '@mui/material/CardHeader';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import CardMedia from '@mui/material/CardMedia';
-import Checkbox from '@mui/material/Checkbox';
-import FormControlLabel from '@mui/material/FormControlLabel';
+import { Stack } from "@mui/material";
+import CardHeader from "@mui/material/CardHeader";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import CardMedia from "@mui/material/CardMedia";
+import Checkbox from "@mui/material/Checkbox";
+import FormControlLabel from "@mui/material/FormControlLabel";
 
-
-class RecipeView2 extends React.Component {
+class RecipeView4 extends React.Component {
   render() {
-
     return (
       <div>
         <Stack>
           <CardHeader
-            title="Pizza with Pineapples"
+            title="The Choya Extra Shiso Umeshu Spritz"
             subheader="September 14, 2016"
           />
           <CardMedia
@@ -27,20 +25,39 @@ class RecipeView2 extends React.Component {
           />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
-              This impressive paella is a perfect party dish and a fun meal to cook
-              together with your guests. Add 1 cup of frozen peas along with the mussels,
-              if you like.
+              Simple to make but delicate and bubly drink with fruity spicy plum
+              flavor. It is very easy to drink but still gives you the
+              sensation.
             </Typography>
           </CardContent>
+          <CardContent>
+            <Typography paragraph>Ingredients</Typography>
 
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="1/2dl The Choya Extra Shiso Umeshu"
+                labelPlacement="end"
+              />
+            </Typography>
+            <Typography paragraph>
+              <FormControlLabel
+                value="end"
+                control={<Checkbox />}
+                label="1dl Sprite/7up/Tonic Water(depends on your taste)"
+                labelPlacement="end"
+              />
+            </Typography>
+          </CardContent>
           <CardContent>
             <Typography paragraph>Method:</Typography>
             <Typography paragraph>
               <FormControlLabel
                 value="end"
                 control={<Checkbox />}
-                label="Heat 1/2 cup of the broth in a pot until simmering, add saffron and set
-                aside for 10 minutes."
+                label="In a glass, put in ice cube, then combine both liquid and stir gently. 
+                Pour the liquid to your favourite cocktail glass and enjoy. "
                 labelPlacement="end"
               />
             </Typography>
@@ -83,10 +100,9 @@ class RecipeView2 extends React.Component {
             </Typography>
           </CardContent>
         </Stack>
-
-      </div >
+      </div>
     );
   }
 }
 
-export default RecipeView2;
+export default RecipeView4;
