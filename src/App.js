@@ -10,7 +10,12 @@ import RecipeGridView from './views/RecipeGridView';
 import AboutView from './views/AboutView';
 import RecipeView1 from './views/RecipeViews/RecipeView1';
 import RecipeView2 from './views/RecipeViews/RecipeView2';
-
+import RecipeView3 from './views/RecipeViews/RecipeView3';
+import RecipeView4 from './views/RecipeViews/RecipeView4';
+import StartersGridView from './views/CategoryView/StartersGridView';
+import MainsGridView from './views/CategoryView/MainsGridView';
+import DessertsGridView from './views/CategoryView/DessertsGridView';
+import DrinksGridView from './views/CategoryView/DrinksGridView';
 
 class App extends React.Component {
   constructor() {
@@ -19,6 +24,7 @@ class App extends React.Component {
 
     }
   };
+
   render() {
     return (
       <>
@@ -80,6 +86,54 @@ class App extends React.Component {
           <Route exact path="/recipeview2" element={
             <Container maxWidth="sm">
               <RecipeView2
+              />
+            </Container>
+          }
+          />
+
+          <Route exact path="/recipeview3" element={
+            <Container maxWidth="sm">
+              <RecipeView3
+              />
+            </Container>
+          }
+          />
+
+          <Route exact path="/recipeview4" element={
+            <Container maxWidth="sm">
+              <RecipeView4
+              />
+            </Container>
+          }
+          />
+
+          <Route exact path="/starters" element={
+            <Container maxWidth="sm">
+              <StartersGridView
+              />
+            </Container>
+          }
+          />
+
+          <Route exact path="/mains" element={
+            <Container maxWidth="sm">
+              <MainsGridView
+              />
+            </Container>
+          }
+          />
+
+          <Route exact path="/desserts" element={
+            <Container maxWidth="sm">
+              <DessertsGridView
+              />
+            </Container>
+          }
+          />
+
+          <Route exact path="/drinks" element={
+            <Container maxWidth="sm">
+              <DrinksGridView
               />
             </Container>
           }
