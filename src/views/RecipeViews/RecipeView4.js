@@ -20,7 +20,7 @@ class RecipeView4 extends React.Component {
             component="img"
             height="194"
             image="/static/images/cards/paella.jpg"
-            alt="Paella dish"
+            alt="Choya Umeshu Spritz"
             style={{ paddingLeft: 13 }}
           />
           <CardContent>
