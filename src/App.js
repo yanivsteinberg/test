@@ -31,9 +31,12 @@ class App extends React.Component {
       <>
         <div>
           {
-            <Container maxWidth="xl">
-              <Carousel className="carousel" />
-              <h1 className="title">The React Recipebook</h1>
+            <Container maxWidth="lg">
+              <Carousel
+                className='carousel' />
+              <h1 className='title'>
+                The React Recipebook
+              </h1>
             </Container>
           }
 
