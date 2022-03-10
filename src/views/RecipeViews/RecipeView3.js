@@ -17,7 +17,7 @@ class RecipeView3 extends React.Component {
             component="img"
             height="194"
             image="/static/images/cards/paella.jpg"
-            alt="Paella dish"
+            alt="Caramel Flan"
             style={{ paddingLeft: 13 }}
           />
           <CardContent>
