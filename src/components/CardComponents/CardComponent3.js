@@ -52,12 +52,12 @@ export default function CardComponent3() {
         subheader="September 14, 2016"
       />
       <CardActionArea>
-        <Link to={"/recipeview2"} style={{ textDecoration: "none" }}>
+        <Link to={"/recipeview3"} style={{ textDecoration: "none" }}>
           <CardMedia
             component="img"
             height="194"
             image="/static/images/cards/paella.jpg"
-            alt="Paella dish"
+            alt="Caramel Flan"
             style={{ paddingLeft: 13 }}
           />
           <CardContent>

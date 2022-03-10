@@ -57,7 +57,7 @@ export default function CardComponent2() {
             component="img"
             height="194"
             image="/static/images/cards/paella.jpg"
-            alt="Paella dish"
+            alt="Shrimp Tempura"
             style={{ paddingLeft: 13 }}
           />
           <CardContent>
