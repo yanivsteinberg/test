@@ -30,7 +30,7 @@ class App extends React.Component {
       <>
         <div>
           {
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
               <Carousel
                 className='carousel' />
               <h1 className='title'>

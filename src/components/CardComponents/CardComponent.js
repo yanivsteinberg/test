@@ -49,14 +49,14 @@ export default function CardComponent() {
           </IconButton>
         }
         title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        subheader="September 21, 2021"
       />
       <CardActionArea>
         <Link to={"/recipeview1"} style={{ textDecoration: "none" }}>
           <CardMedia
             component="img"
             height="194"
-            image="/static/images/cards/paella.jpg"
+            image="https://images.unsplash.com/photo-1604543519952-12b7038886c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             alt="Paella dish"
             style={{ paddingLeft: 13 }}
           />

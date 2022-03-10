@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import MobileStepper from '@mui/material/MobileStepper';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import SwipeableViews from 'react-swipeable-views';
@@ -13,22 +12,22 @@ const images = [
   {
     label: 'Food image 1',
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1153&q=80',
   },
   {
     label: 'Food image 2',
     imgPath:
-      'https://source.unsplash.com/WLUHO9A_xik/1600x900',
+      'https://images.unsplash.com/photo-1625937329368-9c6e55f665ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1708&q=80',
   },
   {
     label: 'Food image 3',
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+      'https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
   },
   {
     label: 'Food image 4',
     imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://images.unsplash.com/photo-1613656011183-fa3433c07042?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80',
   },
 ];
 
@@ -85,12 +84,6 @@ function Carousel() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-      <MobileStepper
-        steps={maxSteps}
-        position="static"
-        activeStep={activeStep}
-      />
-      <Typography>{images[activeStep].label}</Typography>
     </Box>
   );
 }

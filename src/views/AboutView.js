@@ -16,7 +16,7 @@ class AboutView extends React.Component {
 
         <div>
           <div>
-            <img src={about} width="80%" height="auto" />
+            <img src={about} width="100%" height="auto" />
           </div>
         </div>
 

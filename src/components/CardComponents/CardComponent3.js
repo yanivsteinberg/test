@@ -9,7 +9,7 @@ import Collapse from "@mui/material/Collapse";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import { red } from "@mui/material/colors";
+import { purple } from "@mui/material/colors";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -39,8 +39,8 @@ export default function CardComponent3() {
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
+          <Avatar sx={{ bgcolor: purple[500] }} aria-label="recipe">
+            H
           </Avatar>
         }
         action={
@@ -49,14 +49,14 @@ export default function CardComponent3() {
           </IconButton>
         }
         title="Caramel Flan"
-        subheader="September 14, 2016"
+        subheader="November 14, 2021"
       />
       <CardActionArea>
         <Link to={"/recipeview3"} style={{ textDecoration: "none" }}>
           <CardMedia
             component="img"
             height="194"
-            image="/static/images/cards/paella.jpg"
+            image="https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2017/04/18195816/051095070-01-creme-caramel-main.jpg"
             alt="Caramel Flan"
             style={{ paddingLeft: 13 }}
           />

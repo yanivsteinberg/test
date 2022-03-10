@@ -9,7 +9,7 @@ import Collapse from "@mui/material/Collapse";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import { red } from "@mui/material/colors";
+import { green } from "@mui/material/colors";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -39,8 +39,8 @@ export default function CardComponent4() {
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
+          <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+            P
           </Avatar>
         }
         action={
@@ -56,7 +56,7 @@ export default function CardComponent4() {
           <CardMedia
             component="img"
             height="194"
-            image="/static/images/cards/paella.jpg"
+            image="https://galumbi.com/wp-content/uploads/2017/10/Jisei-4-von-5-590x912.jpg"
             alt="Choya Umeshu Spritz"
             style={{ paddingLeft: 13 }}
           />
