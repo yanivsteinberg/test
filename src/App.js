@@ -62,7 +62,7 @@ class App extends React.Component {
             exact
             path="/categories"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <CategoryView />
               </Container>
             }
@@ -72,7 +72,7 @@ class App extends React.Component {
             exact
             path="/about"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <AboutView />
               </Container>
             }
@@ -82,7 +82,7 @@ class App extends React.Component {
             exact
             path="/recipeview1"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <RecipeView1 />
               </Container>
             }
@@ -92,7 +92,7 @@ class App extends React.Component {
             exact
             path="/recipeview2"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <RecipeView2 />
               </Container>
             }
@@ -102,7 +102,7 @@ class App extends React.Component {
             exact
             path="/recipeview3"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <RecipeView3 />
               </Container>
             }
@@ -112,7 +112,7 @@ class App extends React.Component {
             exact
             path="/recipeview4"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <RecipeView4 />
               </Container>
             }
@@ -122,7 +122,7 @@ class App extends React.Component {
             exact
             path="/starters"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <StartersGridView />
               </Container>
             }
@@ -132,7 +132,7 @@ class App extends React.Component {
             exact
             path="/mains"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <MainsGridView />
               </Container>
             }
@@ -142,7 +142,7 @@ class App extends React.Component {
             exact
             path="/desserts"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <DessertsGridView />
               </Container>
             }
@@ -152,7 +152,7 @@ class App extends React.Component {
             exact
             path="/drinks"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <DrinksGridView />
               </Container>
             }
@@ -160,19 +160,9 @@ class App extends React.Component {
 
           <Route
             exact
-            path="/"
-            element={
-              <Container maxWidth="sm">
-                <HomeView />
-                <RecipeGridView />
-              </Container>
-            }
-          />
-          <Route
-            exact
             path="/recipeview5"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <RecipeView5 />
               </Container>
             }
@@ -181,7 +171,7 @@ class App extends React.Component {
             exact
             path="/recipeview6"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <RecipeView6 />
               </Container>
             }
@@ -190,11 +180,23 @@ class App extends React.Component {
             exact
             path="/recipeview7"
             element={
-              <Container maxWidth="sm">
+              <Container maxWidth="md">
                 <RecipeView7 />
               </Container>
             }
           />
+
+          <Route
+            exact
+            path="/"
+            element={
+              <Container maxWidth="md">
+                <HomeView />
+                <RecipeGridView />
+              </Container>
+            }
+          />
+
         </Routes>
       </>
     );
